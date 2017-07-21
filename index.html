@@ -10,12 +10,23 @@
 	<script type="text/javascript" src="editComponent.js"></script>	
 </head>
 <body>
-<div is="container">
-	<div id="head">
+<div id="head">
 		<span>选择插件</span>
-	</div>
-	<div id="editContainer"></div>
-	<div id="contentContainer"></div>
+</div>
+<div id="container">
+	<section id="editContainer"></section>
+	<section id="contentContainer" class="hui-filter-unit js_col_2 js_col_remain">
+		<ul class="hui-filter-check">
+            <li class="js_single_option hotel-sure" data-id="500" data-idx="0" data-rel="radius"><p class=" ellips_line2">500米以内</p></li>
+            <li class="js_single_option" data-id="1000" data-idx="1" data-rel="radius"><p class=" ellips_line2">1公里以内</p></li>
+            <li class="js_single_option" data-id="2000" data-idx="2" data-rel="radius"><p class=" ellips_line2">2公里以内</p></li>
+            <li class="js_single_option" data-id="3000" data-idx="3" data-rel="radius"><p class=" ellips_line2">3公里以内</p></li>
+            <li class="js_single_option" data-id="4000" data-idx="4" data-rel="radius"><p class=" ellips_line2">4公里以内</p></li>
+            <li class="js_single_option" data-id="8000" data-idx="5" data-rel="radius"><p class=" ellips_line2">8公里以内</p></li>
+            <li class="js_single_option" data-id="10000" data-idx="6" data-rel="radius"><p class=" ellips_line2">10公里以内</p></li>
+        	<li class="js_no_limit" data-rel="radius"><p>不限</p></li>     
+        </ul>
+	</section>
 </div>
 <script type="text/javascript">
 	var editComponent = new editComponent({

@@ -13,12 +13,12 @@ editComponent.prototype = {
     },	
     /*渲染组件*/
     render:function(){
-	    var html =  "<nav class='cm-tabs-nav'>";
+	    var html =  "<div class='cm-tabs-nav'>";
             html += "<ul class='cm-tabs-title-list js_item_wrapper'>";
             html += this.dataTohtml(this.data);
             html += "</ul>";
             html += "<i class='icon-active js_scrollbar'></i>";
-            html += "</nav>";
+            html += "</div>";
         $("#" + this.containerId).html(html);
         $("#" + this.containerId).css("height",this.containerHeight);       
     },

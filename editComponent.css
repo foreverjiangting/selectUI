@@ -9,10 +9,19 @@ body{
   text-align: center;
   position: fixed;
   top: 0px;
+  z-index: 999;
+}
+#container{
+  margin-top: 48px;
+}
+#contentContainer{
+  display: inline-block;
+  float: left;
+  width: 68%;
+  height: 500px;
 }
 #editContainer{
-  position: relative;
-  top: 48px;
+  display: inline-block;
 }
 
 #head span{
@@ -22,13 +31,13 @@ body{
 ul, ol {
     list-style: none;
 }
-.cm-tabs-nav{
-  max-width: 110px;
-  min-width: 80px;
+#editContainer{
+  width: 110px;
   background: #FAFAFA;
   position: relative;
   border-bottom: 1px solid #dbdbdb;
   height: 100%;
+  float: left;
 }
 .cm-tabs-nav ul{
     margin: 0px;
@@ -61,4 +70,21 @@ ul, ol {
   -webkit-transition: left 0.3s ease-in-out;
   -ms-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;
+}
+
+.hui-filter-unit li {
+    position: relative;
+    text-align: left;
+    min-height: 44px;
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+.hui-filter-unit li p {
+    padding-right: 20px;
+}
+.hui-filterbox p {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
